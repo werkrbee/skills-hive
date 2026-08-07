@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="assets/skills-hive-logo.svg" alt="skills-hive — portable agent skills, one hive, every harness" width="620">
+</p>
+
+<p align="center">
+  <em>Each cell in the hive is a harness; the dots inside are its skills. The bee at the core is the hive itself.</em>
+</p>
+
 # skills-hive
 
 > **Harness-agnostic by design.** Skills here are written as portable

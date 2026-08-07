@@ -1,0 +1,47 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="skills-hive">
+  <title>skills-hive</title>
+
+  <!-- Outer harness cells -->
+  <g fill="#F7EFDD" stroke="#17140F" stroke-width="4.5" stroke-linejoin="round">
+    <polygon transform="translate(82.75,55.5)"  points="34.64,20 0,40 -34.64,20 -34.64,-20 0,-40 34.64,-20"/>
+    <polygon transform="translate(157.25,55.5)" points="34.64,20 0,40 -34.64,20 -34.64,-20 0,-40 34.64,-20"/>
+    <polygon transform="translate(194.5,120)"   points="34.64,20 0,40 -34.64,20 -34.64,-20 0,-40 34.64,-20"/>
+    <polygon transform="translate(157.25,184.5)" points="34.64,20 0,40 -34.64,20 -34.64,-20 0,-40 34.64,-20"/>
+    <polygon transform="translate(82.75,184.5)"  points="34.64,20 0,40 -34.64,20 -34.64,-20 0,-40 34.64,-20"/>
+    <polygon transform="translate(45.5,120)"     points="34.64,20 0,40 -34.64,20 -34.64,-20 0,-40 34.64,-20"/>
+  </g>
+
+  <!-- Center cell (the hive core) -->
+  <polygon transform="translate(120,120)" points="34.64,20 0,40 -34.64,20 -34.64,-20 0,-40 34.64,-20"
+           fill="#17140F" stroke="#17140F" stroke-width="4.5" stroke-linejoin="round"/>
+
+  <!-- Skill dots: each harness cell holds a set of skills -->
+  <g fill="#E1901A">
+    <!-- NW -->
+    <circle cx="82.75" cy="47.5" r="3.8"/><circle cx="74.75" cy="61.5" r="3.8"/><circle cx="90.75" cy="61.5" r="3.8"/>
+    <!-- NE -->
+    <circle cx="149.25" cy="55.5" r="3.8"/><circle cx="165.25" cy="55.5" r="3.8"/>
+    <!-- E -->
+    <circle cx="187.5" cy="113" r="3.8"/><circle cx="201.5" cy="113" r="3.8"/><circle cx="187.5" cy="127" r="3.8"/><circle cx="201.5" cy="127" r="3.8"/>
+    <!-- SE -->
+    <circle cx="157.25" cy="176.5" r="3.8"/><circle cx="149.25" cy="190.5" r="3.8"/><circle cx="165.25" cy="190.5" r="3.8"/>
+    <!-- SW -->
+    <circle cx="74.75" cy="184.5" r="3.8"/><circle cx="90.75" cy="184.5" r="3.8"/>
+    <!-- W -->
+    <circle cx="45.5" cy="112" r="3.8"/><circle cx="37.5" cy="126" r="3.8"/><circle cx="53.5" cy="126" r="3.8"/>
+  </g>
+
+  <!-- The bee at the heart of the hive -->
+  <g>
+    <ellipse cx="111" cy="115" rx="9" ry="5.4" fill="#F7EFDD" opacity="0.92" transform="rotate(-28 111 115)"/>
+    <ellipse cx="129" cy="115" rx="9" ry="5.4" fill="#F7EFDD" opacity="0.92" transform="rotate(28 129 115)"/>
+    <rect x="113.5" y="112" width="13" height="27" rx="6.5" fill="#F2A81D"/>
+    <rect x="113.5" y="119.5" width="13" height="3" rx="1" fill="#17140F"/>
+    <rect x="113.5" y="127.5" width="13" height="3" rx="1" fill="#17140F"/>
+    <circle cx="120" cy="110" r="5.2" fill="#17140F"/>
+    <path d="M117.5,106 Q114.5,101 113,98.5" stroke="#17140F" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M122.5,106 Q125.5,101 127,98.5" stroke="#17140F" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <circle cx="113" cy="98.5" r="1.7" fill="#F2A81D"/>
+    <circle cx="127" cy="98.5" r="1.7" fill="#F2A81D"/>
+  </g>
+</svg>
