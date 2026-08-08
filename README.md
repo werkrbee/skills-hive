@@ -4,9 +4,10 @@
 
 # skills-hive
 
-> **Harness-agnostic by design.** Skills here are written as portable
-> `SKILL.md` files with no lock-in to any one agent — the same skill runs across
-> Claude Code, Codex, Cursor, GitHub Copilot, Gemini, Goose, and Scout.
+> **Harness-agnostic by design.** Skills here are portable `SKILL.md` files with
+> no lock-in to any one agent — the same skill runs across Claude Code, Codex,
+> Gemini CLI, GitHub Copilot (and Scout), Cursor, Goose, OpenCode, Kiro,
+> Databricks Genie Code, and Snowflake Cortex Code.
 
 Personal agent skills for [werkrbee](https://github.com/werkrbee), packaged for **multiple AI coding harnesses** using the open [Agent Skills](https://agentskills.io) standard (`SKILL.md`).
 
@@ -17,6 +18,23 @@ One repo. Install into Cursor, Claude Code, Codex, GitHub Copilot, Gemini CLI, G
 | Skill | Description |
 |-------|-------------|
 | [**barry**](skills/barry/) | Chief of staff — decomposes goals, delegates to a fleet of agents, synthesizes executive summaries |
+
+## Harnesses
+
+<p align="center">
+  <img src="assets/skills-hive-fleet.svg" alt="skills-hive fleet — Barry orchestrating every harness" width="380">
+</p>
+
+skills-hive installs into every major agent harness that reads the `SKILL.md`
+standard. Barry is the queen; each cell is a harness she orchestrates:
+
+- **Frontier labs** — Claude Code (Anthropic), Codex (OpenAI), Gemini CLI (Google)
+- **Hyperscalers** — GitHub Copilot (Microsoft), with **Scout** as a Windows
+  sub-harness; Kiro (AWS)
+- **Data & analytics** — Databricks Genie Code, Snowflake Cortex Code
+- **Open source & independent** — Cursor, Goose (Block), OpenCode
+
+See [Harness paths](#harness-paths) for exact install locations per harness.
 
 ## Repository layout
 
@@ -92,6 +110,7 @@ npx skills add werkrbee/skills-hive --global -a cursor -y
 # Barry only → multiple harnesses
 npx skills add werkrbee/skills-hive --global \
   -a cursor -a claude-code -a codex -a github-copilot -a goose -a gemini-cli \
+  -a opencode -a kiro \
   --skill barry -y
 
 # List skills in repo without installing
