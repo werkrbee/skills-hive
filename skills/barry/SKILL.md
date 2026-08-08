@@ -87,6 +87,9 @@ Use the **Task** tool to launch subagents. Each prompt must be **self-contained*
 **Resume:** Use `resume` with a prior agent ID to continue focused work without re-explaining context.
 
 For the full agent roster and routing rules, see [references/fleet.md](references/fleet.md).
+For how these roles map onto a specific harness, see
+[references/harnesses/](references/harnesses/) (e.g. `cursor.md`, `claude-code.md`,
+`github-copilot.md` — which also covers the Scout sub-harness).
 
 ### 4. Monitor
 

@@ -2,10 +2,6 @@
   <img src="assets/skills-hive-logo.svg" alt="skills-hive — portable agent skills, one hive, every harness" width="620">
 </p>
 
-<p align="center">
-  <em>Each cell in the hive is a harness; the dots inside are its skills. The bee at the core is the hive itself.</em>
-</p>
-
 # skills-hive
 
 > **Harness-agnostic by design.** Skills here are written as portable
@@ -26,21 +22,54 @@ One repo. Install into Cursor, Claude Code, Codex, GitHub Copilot, Gemini CLI, G
 
 ```text
 skills-hive/
-├── skills/                  # Portable skills (install source of truth)
-│   └── barry/
+├── skills/                       # WHAT agents do — portable skills (source of truth)
+│   └── barry/                    # queen: the primary orchestrator skill
 │       ├── SKILL.md
 │       └── references/
-│           └── fleet.md
-├── adapters/                # Harness-specific notes and future overrides
-│   └── README.md
+│           ├── fleet.md          # the agent roster (logical roles)
+│           └── harnesses/        # Barry's per-harness delegation notes
+│               ├── claude-code.md
+│               ├── cursor.md
+│               ├── codex.md
+│               ├── gemini-cli.md
+│               ├── goose.md
+│               └── github-copilot.md   # includes the Scout sub-harness
+├── adapters/                     # WHERE skills run — harness taxonomy & overrides
+│   ├── README.md
+│   ├── claude-code/
+│   ├── cursor/
+│   ├── codex/
+│   ├── gemini-cli/
+│   ├── goose/
+│   └── github-copilot/
+│       └── scout/                # sub-harness (child of GitHub Copilot)
 ├── scripts/
-│   ├── install.sh           # macOS/Linux: copy skills into harness dirs
-│   └── install.ps1          # Windows/Scout: junctions + m-settings.json
+│   ├── install.sh                # macOS/Linux: copy skills into harness dirs
+│   └── install.ps1               # Windows/Scout: junctions + m-settings.json
 ├── LICENSE
 └── README.md
 ```
 
-Portable skills live under `skills/`. Harness-specific adapters (when needed) go under `adapters/<harness>/`.
+The repo separates two axes so the "queen orchestrator" idea scales cleanly:
+
+- **`skills/` is *what* agents do.** Each skill (Barry, and future ones) is a
+  portable `SKILL.md` folder. It stays flat and harness-neutral so `install.sh`
+  can copy `skills/barry/` into any harness without dragging platform-specific
+  material along. Barry is the **queen** — the orchestrator — and her per-harness
+  delegation notes live *with* her as reference files under
+  `skills/barry/references/harnesses/<harness>.md`, loaded on demand.
+- **`adapters/` is *where* skills run.** This is the harness taxonomy and the home
+  for any behavior override tied to a specific harness:
+  `adapters/<harness>/`, with a **sub-harness** nested one level deeper as
+  `adapters/<harness>/<sub-harness>/`.
+- **Microsoft example:** Scout runs on the GitHub Copilot harness, so it sits at
+  `adapters/github-copilot/scout/` — a child of its parent — and Barry's notes for
+  it are a section inside `references/harnesses/github-copilot.md`.
+
+Why not nest harness folders inside `skills/barry/`? Because installing Barry
+copies that whole folder into each harness's skills dir — nested harness
+directories would pollute every install, and they'd lock the harness list inside
+one skill instead of sharing it across all of them.
 
 ## Install
 
