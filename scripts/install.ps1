@@ -50,6 +50,7 @@ $Harnesses = [ordered]@{
   cursor  = Join-Path $env:USERPROFILE ".cursor\skills"
   codex   = Join-Path $env:USERPROFILE ".codex\skills"
   gemini  = Join-Path $env:USERPROFILE ".gemini\skills"
+  kiro    = Join-Path $env:USERPROFILE ".kiro\skills"
 }
 
 if (-not (Test-Path $Src)) {

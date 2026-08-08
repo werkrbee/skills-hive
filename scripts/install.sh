@@ -28,7 +28,10 @@ harness_path() {
     goose)          printf '%s' "${HOME}/.config/goose/skills" ;;
     opencode)       printf '%s' "${HOME}/.config/opencode/skills" ;;
     scout)          printf '%s' "${HOME}/.scout/skills" ;;
-    agents)         printf '%s' "${HOME}/.agents/skills" ;;
+    kiro)                  printf '%s' "${HOME}/.kiro/skills" ;;          # AWS — verify path
+    databricks-genie-code) printf '%s' "${HOME}/.databricks/skills" ;;    # workspace-based; verify
+    snowflake-cortex-code) printf '%s' "${HOME}/.snowflake/skills" ;;     # workspace-based; verify
+    agents)                printf '%s' "${HOME}/.agents/skills" ;;
     *)              printf '' ;;
   esac
 }
@@ -42,7 +45,8 @@ Options:
   --all             Install every skill in skills/
   --skill NAME      Install one skill (repeatable)
   --harness NAME    Target harness (repeatable): claude-code, codex, cursor,
-                    github-copilot, gemini-cli, goose, opencode, scout, agents
+                    github-copilot, gemini-cli, goose, opencode, scout, kiro,
+                    databricks-genie-code, snowflake-cortex-code, agents
   -h, --help        Show this help
 
 Examples:

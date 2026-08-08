@@ -10,7 +10,7 @@
 
 Personal agent skills for [werkrbee](https://github.com/werkrbee), packaged for **multiple AI coding harnesses** using the open [Agent Skills](https://agentskills.io) standard (`SKILL.md`).
 
-One repo. Install into Cursor, Claude Code, Codex, GitHub Copilot, Gemini CLI, Goose, Scout, and more.
+One repo. Install into Cursor, Claude Code, Codex, GitHub Copilot, Gemini CLI, Goose, Kiro, Scout, Databricks Genie Code, Snowflake Cortex Code, and more.
 
 ## Skills
 
@@ -33,6 +33,10 @@ skills-hive/
 │               ├── codex.md
 │               ├── gemini-cli.md
 │               ├── goose.md
+│               ├── opencode.md
+│               ├── kiro.md
+│               ├── databricks-genie-code.md
+│               ├── snowflake-cortex-code.md
 │               └── github-copilot.md   # includes the Scout sub-harness
 ├── adapters/                     # WHERE skills run — harness taxonomy & overrides
 │   ├── README.md
@@ -41,6 +45,10 @@ skills-hive/
 │   ├── codex/
 │   ├── gemini-cli/
 │   ├── goose/
+│   ├── opencode/                 # open-source peer harness
+│   ├── kiro/                     # AWS (spec-driven; replaced Amazon Q)
+│   ├── databricks-genie-code/    # data / analytics
+│   ├── snowflake-cortex-code/    # data / analytics
 │   └── github-copilot/
 │       └── scout/                # sub-harness (child of GitHub Copilot)
 ├── scripts/
@@ -143,9 +151,18 @@ cp -R skills/barry ~/.cursor/skills/barry
 | Gemini CLI | `~/.gemini/skills/` | `.agents/skills/` |
 | Goose | `~/.config/goose/skills/` | `.goose/skills/` |
 | OpenCode | `~/.config/opencode/skills/` | `.agents/skills/` |
+| Kiro (AWS) | `~/.kiro/skills/` † | `.kiro/skills/` or `.agents/skills/` † |
 | Scout (Windows) | `%USERPROFILE%\.scout\skills\` | — |
+| Databricks Genie Code | workspace-based ‡ | `.agents/skills/` ‡ |
+| Snowflake Cortex Code | workspace-based ‡ | `.agents/skills/` ‡ |
 
 Many harnesses also read `~/.agents/skills/` as a shared fallback.
+
+† Kiro paths are best-effort — confirm against current AWS Kiro docs.
+‡ Databricks Genie Code and Snowflake Cortex Code are **data / analytics**
+harnesses; skills are provisioned in the platform workspace (publish-based, like
+Foundry) rather than a local home directory. Confirm the exact mechanism in
+their docs.
 
 ### Which "Copilot"? (and Microsoft's other AI surfaces)
 

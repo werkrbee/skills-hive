@@ -13,9 +13,17 @@ adapters/
   codex/
   gemini-cli/
   goose/
+  opencode/                 # open-source, model-agnostic peer harness
+  kiro/                     # AWS — spec-driven agent (replaced Amazon Q Developer)
+  databricks-genie-code/    # data / analytics (workspace-based)
+  snowflake-cortex-code/    # data / analytics (workspace-based)
   github-copilot/
-    scout/            # sub-harness: runs on the GitHub Copilot harness (Windows)
+    scout/                  # sub-harness: runs on the GitHub Copilot harness (Windows)
 ```
+
+Folder names follow the **product name** in kebab-case (e.g. `claude-code`,
+`github-copilot`, `databricks-genie-code`) so the convention is consistent across
+the fleet.
 
 Add a per-skill subfolder only when a skill needs materially different
 instructions on that harness, e.g. `adapters/cursor/barry/` for Cursor-only
