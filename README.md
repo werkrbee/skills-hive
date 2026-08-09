@@ -28,7 +28,7 @@ One repo. Install into Cursor, Claude Code, Codex, GitHub Copilot, Gemini CLI, G
 </p>
 
 skills-hive installs into every major agent harness that reads the `SKILL.md`
-standard. Barry is the queen; each cell is a harness she orchestrates:
+standard. Barry is the king; each cell is a harness he orchestrates:
 
 - **Frontier labs** — Claude Code (Anthropic), Codex (OpenAI), Gemini CLI (Google)
 - **Hyperscalers** — GitHub Copilot (Microsoft), with **Scout** as a Windows
@@ -43,7 +43,7 @@ See [Harness paths](#harness-paths) for exact install locations per harness.
 ```text
 skills-hive/
 ├── skills/                       # WHAT agents do — portable skills (source of truth)
-│   └── barry/                    # queen: the primary orchestrator skill
+│   └── barry/                    # king: the primary orchestrator skill
 │       ├── SKILL.md
 │       └── references/
 │           ├── fleet.md          # the agent roster (logical roles)
@@ -78,13 +78,13 @@ skills-hive/
 └── README.md
 ```
 
-The repo separates two axes so the "queen orchestrator" idea scales cleanly:
+The repo separates two axes so the "king orchestrator" idea scales cleanly:
 
 - **`skills/` is *what* agents do.** Each skill (Barry, and future ones) is a
   portable `SKILL.md` folder. It stays flat and harness-neutral so `install.sh`
   can copy `skills/barry/` into any harness without dragging platform-specific
-  material along. Barry is the **queen** — the orchestrator — and her per-harness
-  delegation notes live *with* her as reference files under
+  material along. Barry is the **king** — the orchestrator — and his per-harness
+  delegation notes live *with* him as reference files under
   `skills/barry/references/harnesses/<harness>.md`, loaded on demand.
 - **`adapters/` is *where* skills run.** This is the harness taxonomy and the home
   for any behavior override tied to a specific harness:

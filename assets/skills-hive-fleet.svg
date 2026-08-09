@@ -1,6 +1,6 @@
 <svg viewBox="118 24 300 398" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="skills-hive fleet map">
   <title>skills-hive — the fleet</title>
-  <desc>Barry the queen bee at the center of a honeycomb, surrounded by named harness cells: Claude Code, Codex, Gemini CLI, GitHub Copilot (with Scout child), Kiro, Cursor, Goose, OpenCode (open source), Databricks Genie Code, and Snowflake Cortex Code.</desc>
+  <desc>Barry the king bee at the center of a honeycomb, surrounded by named harness cells: Claude Code, Codex, Gemini CLI, GitHub Copilot (with Scout child), Kiro, Cursor, Goose, OpenCode (open source), Databricks Genie Code, and Snowflake Cortex Code.</desc>
 
   <rect x="121" y="27" width="294" height="392" rx="24" fill="#FBF6EA" stroke="#EADFC6" stroke-width="2.5"/>
 
@@ -54,5 +54,5 @@
   <text x="240" y="243" font-family="'Poppins','Helvetica Neue',Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#F7EFDD" text-anchor="middle">BARRY</text>
 
   <text x="266" y="392" font-family="'Poppins','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="800" letter-spacing="1" fill="#17140F" text-anchor="middle">skills·hive — the fleet</text>
-  <text x="266" y="408" font-family="'Poppins','Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="500" fill="#7A6B4F" text-anchor="middle">Barry (queen) orchestrates every harness · dashed cell = open source</text>
+  <text x="266" y="408" font-family="'Poppins','Helvetica Neue',Arial,sans-serif" font-size="9.5" font-weight="500" fill="#7A6B4F" text-anchor="middle">Barry (king) orchestrates every harness · dashed cell = open source</text>
 </svg>

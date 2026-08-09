@@ -1,5 +1,5 @@
 <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="skills-hive">
-  <title>skills-hive — Barry the queen bee orchestrating a fleet of harness cells</title>
+  <title>skills-hive — Barry the king bee orchestrating a fleet of harness cells</title>
 
   <!-- umbilical: GitHub Copilot -> Scout (sub-harness) -->
   <rect x="232.5" y="121.5" width="11" height="7" rx="3" fill="#E1901A"/>
@@ -18,7 +18,7 @@
   <polygon transform="translate(261,125)" points="19.05,11 0,22 -19.05,11 -19.05,-11 0,-22 19.05,-11"
            fill="#F7EFDD" stroke="#17140F" stroke-width="3.5" stroke-linejoin="round"/>
 
-  <!-- Center cell: the queen's chamber -->
+  <!-- Center cell: the king's chamber -->
   <polygon transform="translate(125,125)" points="34.64,20 0,40 -34.64,20 -34.64,-20 0,-40 34.64,-20"
            fill="#17140F" stroke="#17140F" stroke-width="4.5" stroke-linejoin="round"/>
 
@@ -33,7 +33,7 @@
     <circle cx="255" cy="125" r="2.6"/><circle cx="267" cy="125" r="2.6"/>
   </g>
 
-  <!-- Barry: the queen bee -->
+  <!-- Barry: the king bee -->
   <g>
     <ellipse cx="116" cy="120" rx="9" ry="5.4" fill="#F7EFDD" opacity="0.92" transform="rotate(-28 116 120)"/>
     <ellipse cx="134" cy="120" rx="9" ry="5.4" fill="#F7EFDD" opacity="0.92" transform="rotate(28 134 120)"/>

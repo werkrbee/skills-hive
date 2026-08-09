@@ -30,8 +30,8 @@ instructions on that harness, e.g. `adapters/cursor/barry/` for Cursor-only
 extensions. Until then the folders stand as the canonical harness list.
 
 **Barry** ships as a single portable, harness-agnostic skill under
-`skills/barry/`. Her logical agent roster lives in
-[`skills/barry/references/fleet.md`](../skills/barry/references/fleet.md), and her
+`skills/barry/`. His logical agent roster lives in
+[`skills/barry/references/fleet.md`](../skills/barry/references/fleet.md), and his
 harness-by-harness delegation notes (including how Scout maps onto GitHub Copilot)
 live in [`skills/barry/references/harnesses/`](../skills/barry/references/harnesses/).
 Only create an adapter here when behavior must actually diverge for a harness.
