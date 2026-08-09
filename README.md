@@ -9,6 +9,8 @@
 > Gemini CLI, GitHub Copilot (and Scout), Cursor, Goose, OpenCode, Kiro,
 > Databricks Genie Code, and Snowflake Cortex Code.
 
+*Part of the **[ai-hive](https://github.com/werkrbee/ai-hive)** family — werkrbee's House of Hives (skills · rules · tools · agents · and more).*
+
 Personal agent skills for [werkrbee](https://github.com/werkrbee), packaged for **multiple AI coding harnesses** using the open [Agent Skills](https://agentskills.io) standard (`SKILL.md`).
 
 One repo. Install into Cursor, Claude Code, Codex, GitHub Copilot, Gemini CLI, Goose, Kiro, Scout, Databricks Genie Code, Snowflake Cortex Code, and more.
