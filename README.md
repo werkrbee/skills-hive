@@ -19,7 +19,8 @@ One repo. Install into Cursor, Claude Code, Codex, GitHub Copilot, Gemini CLI, G
 
 | Skill | Description |
 |-------|-------------|
-| [**barry**](skills/barry/) | Chief of staff — decomposes goals, delegates to a fleet of agents, synthesizes executive summaries |
+| [**barry**](skills/barry/) | The King Bee — chief of staff who decomposes goals, delegates to a fleet of agents, and synthesizes executive summaries |
+| [**patricia**](skills/patricia/) | The Queen Bee — governance guardian who reviews plans and actions against the charter and gates consequential operations |
 
 ## Harnesses
 
