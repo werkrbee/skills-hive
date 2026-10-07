@@ -1,3 +1,9 @@
+> **Moved.** This hive now lives in
+> [werkrbee/ai-hive](https://github.com/werkrbee/ai-hive/tree/main/hives/skills-hive)
+> under `hives/skills-hive`, where all development happens.
+> This repository is archived read-only and keeps the
+> history up to the move.
+
 <p align="center">
   <img src="assets/skills-hive-logo.svg" alt="skills-hive — portable agent skills, one hive, every harness" width="620">
 </p>
